@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #000;
+  text-align: center;
+  padding: 2rem;
+}
+
+.minimal-portfolio {
+  max-width: 100%; /* Full Width Baby */
+  margin: 0; /* No margins. Just VIBES */
+  padding: 0 5vw; /* Optional little air on the sides */
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  line-height: 2.1;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.0rem;
+  margin-bottom: 4rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+.gallery-item {
+  height: 200px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.0rem;
+  padding: 4rem 0;
+}
+
+.contact {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Hidden by default */
+  width: 400px;
+  height: 100vh;
+  background: #f5f5f5; /* Paper aesthetic */
+  border-left: 1px solid #000;
+  padding: 3rem;
+  text-align: center;
+  transition: right 0.5s ease-in-out; /* Sliding Animation */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.contact.show {
+  right: 0; /* Slide in */
+}
+
+.contact button {
+  background: none;
+  border: 1px solid black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.contact button:hover {
+  background: #333;
+  color: white;
+}
+
+.about {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: -100%; /* Start off-screen */
+  left: 0;
+  background: white;
+  transition: top 0.8s ease-in-out; /* Smooth slide effect */
+  z-index: 10; /* Make sure it's above everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.slide-down {
+  top: 0; /* Slide down into view */
+}
+
+.about button {
+  background: none;
+  border: 1px solid black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.about button:hover {
+  background: #333;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: black;
+  color: rgb(2, 2, 2);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slide-page {
+  transform: translateY(100vh); /* Push the whole page down */
+  transition: transform 0.8s ease-in-out;
+}
+
+
+.slide-side {
+  right: 0; /* Slide in from the right */
+}
+
+
+body {
+  width: 100vw; /* Full screen width */
+  height: 100vh; /* Full screen height */
+  display: flex; 
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.minimal-portfolio {
+  width: 100vw; 
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+  padding: 3rem 10vw; /* Give her margins like a Deconstructed Prada blazer */
+  gap: 6rem; /* Negative space era */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: start;
+  align-items: start;
+}
+
+.minimal-portfolio {
+  width: 100vw; 
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+  padding: 3rem 10vw; /* Give her margins like a Deconstructed Prada blazer */
+  gap: 6rem; /* Negative space era */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  text-align: centre;
+  max-width: 700px; /* Because not everything needs to be stretched */
+}
+
+
+
+.gallery div {
+  aspect-ratio: 2/3;
+  background: #d9d9d9; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+}
+
+
+
+
