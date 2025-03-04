@@ -1,12 +1,14 @@
 {
-  "name": "pweb",
-  "private": true,
+  "name": "pwebbplnkik",
   "version": "0.0.0",
   "type": "module",
-  // "homepage": "",
+  "homepage": "https://github.com/plnkioi00/personal_web.git",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "publish": "npm publish",
     "lint": "eslint .",
     "preview": "vite preview"
   },
