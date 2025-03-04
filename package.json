@@ -2,10 +2,10 @@
   "name": "pwebbplnkik",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/plnkioi00/personal_web.git",
+  "homepage": "https://plnkioi00.github.io/personal_web/",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "publish": "npm publish",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "-": "^0.0.1",
-    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "save-dev": "^0.0.1-security"
@@ -27,6 +26,7 @@
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
